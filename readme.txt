@@ -47,7 +47,7 @@ The settings is in the bottom of "Settings > Reading" in your admin panel. You w
 == Changelog ==
 
 = 1.0.1 - 01 Feb 2015 =
-* BuddyPress activation page whitelist. credit: Than (via email)
+* BuddyPress activation page whitelist. credit: [Than Sad](https://profiles.wordpress.org/than_sad)
 
 = 1.0.0 - 10 Jan 2015 =
 * Init
