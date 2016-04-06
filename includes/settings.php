@@ -88,7 +88,7 @@ class fx_Private_Site_Settings{
 		/* Create settings section */
 		add_settings_section(
 			'fx_private_site_section', // section ID
-			_x( 'Private Site', 'settings page', 'fx-private-site' ), // section title
+			'<span id="fx-private-site">' . _x( 'Private Site', 'settings page', 'fx-private-site' ) . '</span>', // section title
 			array( $this, 'settings_section' ), // section callback function
 			$this->settings_slug // settings page slug
 		);

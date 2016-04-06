@@ -3,8 +3,8 @@ Contributors: turtlepod
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TT23LVNKA3AU2
 Tags: private site, members only, protect rss
 Requires at least: 4.0
-Tested up to: 4.4
-Stable tag: 1.0.1
+Tested up to: 4.5
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,10 +46,14 @@ The settings is in the bottom of "Settings > Reading" in your admin panel. You w
 
 == Changelog ==
 
-= 1.0.1 - 01 Feb 2015 =
+= 1.1.0 - 05 April 2016 =
+* Activation notice: "Settings Page".
+* Uninstall Hook: Remove db.
+
+= 1.0.1 - 01 Feb 2016 =
 * BuddyPress activation page whitelist. credit: [Than Sad](https://profiles.wordpress.org/than_sad)
 
-= 1.0.0 - 10 Jan 2015 =
+= 1.0.0 - 10 Jan 2016 =
 * Init
 
 == Upgrade Notice ==
