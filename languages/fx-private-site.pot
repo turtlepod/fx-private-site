@@ -1,8 +1,9 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: f(x) Login Notification\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-10 16:40+0700\n"
+"POT-Creation-Date: 2016-04-05 11:04+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: David Chandra P <david@shellcreeper.com>\n"
@@ -13,41 +14,48 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__;_x;"
 "_n;_x:1,2c;_n:1,2;_ex\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/functions.php:91 includes/settings.php:146
+#: fx-private-site.php:95
+#, php-format
+msgid ""
+"Navigate to <a href=\"%s\">Reading Settings</a> to activate Private Site "
+"feature."
+msgstr ""
+
+#: includes/functions.php:93 includes/settings.php:140
 msgctxt "default RSS Feed error message"
 msgid "You must be logged into the site to view this content."
 msgstr ""
 
-#: includes/settings.php:97
+#: includes/settings.php:91
 msgctxt "settings page"
 msgid "Private Site"
 msgstr ""
 
-#: includes/settings.php:105
+#: includes/settings.php:99
 msgctxt "settings page"
 msgid "Enable Private Site"
 msgstr ""
 
-#: includes/settings.php:114
+#: includes/settings.php:108
 msgctxt "settings page"
 msgid "RSS Feed Error Message"
 msgstr ""
 
-#: includes/settings.php:127
+#: includes/settings.php:121
 msgctxt "settings page"
 msgid "Set site to private. Only registered user can view this site."
 msgstr ""
 
-#: includes/settings.php:136
+#: includes/settings.php:130
 msgid ""
 "Redirect all logged-out users to the login page before allowing them to view "
 "the site. "
 msgstr ""
 
-#: includes/settings.php:147
+#: includes/settings.php:141
 msgid ""
 "If site is set to private, this error message will replace RSS feed content."
 msgstr ""

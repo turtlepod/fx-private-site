@@ -1,22 +1,14 @@
 <?php
 /**
  * Plugin Name: f(x) Private Site
- * Plugin URI: http://genbu.me/plugins/fx-private-site/
+ * Plugin URI: http://genbumedia.com/plugins/fx-private-site/
  * Description: Set your site to member only. All visitor will need to login to view site.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: David Chandra Purnama
  * Author URI: http://shellcreeper.com/
- *
- * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
- * General Public License version 2, as published by the Free Software Foundation.  You may NOT assume 
- * that you can use any other version of the GPL.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
- * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- *
- * @author David Chandra Purnama <david@genbu.me>
- * @copyright Copyright (c) 2016, Genbu Media
- * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * License: GPLv2 or later
+ * Text Domain: fx-private-site
+ * Domain Path: /languages/
 **/
 
 /* Do not access this file directly */
@@ -60,3 +52,48 @@ function fx_private_site_plugins_loaded(){
 	}
 }
 
+
+/* Activation and Uninstall
+------------------------------------------ */
+
+/* Register activation hook. */
+register_activation_hook( __FILE__, 'fx_private_site_activation' );
+
+
+/**
+ * Runs only when the plugin is activated.
+ * @since 0.1.0
+ */
+function fx_private_site_activation() {
+
+	set_transient( 'fx_private_site_activation_notice', "1", 5 );
+
+	/* Uninstall plugin hook */
+	register_uninstall_hook( __FILE__, 'fx_private_site_uninstall' );
+}
+
+	/* Add admin notice */
+	add_action( 'admin_notices', 'fx_private_site_admin_notice' );
+
+	/**
+	 * Admin Notice on Activation.
+	 * @since 0.1.0
+	 */
+	function fx_private_site_admin_notice(){
+		$transient = get_transient( 'fx_private_site_activation_notice' );
+		if( "1" === $transient ){
+			?>
+			<div class="updated notice is-dismissible">
+				<p><?php echo sprintf( __( 'Navigate to <a href="%s">Reading Settings</a> to activate Private Site feature.', 'fx-private-site' ), admin_url( 'options-reading.php' ) . '#fx-private-site' ); ?></p>
+			</div>
+			<?php
+			delete_transient( 'fx_private_site_activation_notice' );
+		}
+	}
+
+/**
+ * Uninstall Hook: Delete settings.
+ */
+function fx_private_site_uninstall(){
+	delete_option( 'fx-private-site' );
+}
