@@ -68,9 +68,21 @@ function fx_private_site_please_log_in() {
 	/* Check if the private site feature is active and if the user is not logged in. */
 	if ( true === fx_private_site_get_option( 'enable', false ) && ! is_user_logged_in() ) {
 
+		/* Hook */
+		do_action( 'fx_private_site_before_auth_redirect' );
+
 		/* If using BuddyPress and on the register page, don't do anything. */
-		if ( function_exists( 'bp_is_current_component' ) ){
-			if ( bp_is_current_component( 'register' ) || bp_is_current_component( 'activate' ) ){
+		if ( function_exists( 'bp_is_activation_page' ) && bp_is_activation_page() ){
+			return;
+		}
+		if ( function_exists( 'bp_is_register_page' ) && bp_is_register_page() ){
+			return;
+		}
+
+		/* WooCommerce: Whitelist My Account Page */
+		if ( class_exists( 'WooCommerce' ) ){
+			$myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
+			if( $myaccount_page_id && is_page( $myaccount_page_id ) ){
 				return;
 			}
 		}
