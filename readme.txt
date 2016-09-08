@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: private site, members only, protect rss
 Requires at least: 4.0
 Tested up to: 4.6
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Set your site to member only. All visitor will need to login to view site.
 
 == Description ==
 
-**[f(x) Private Site](http://genbu.me/plugins/fx-private-site/)** is a very simple plugin to set the site to members only website.
+**[f(x) Private Site](http://genbumedia.com/plugins/fx-private-site/)** is a very simple plugin to set the site to members only website.
 
 After installation of this plugin, you can enable this in "Settings > Reading" in "Private Site" Section.
 
@@ -23,7 +23,7 @@ After installation of this plugin, you can enable this in "Settings > Reading" i
 1. Also protect RSS Feed content.
 1. Useful to set site private before lauching the site.
 1. The GPL v2.0 or later license. :) Use it to make something cool.
-1. Support available at [Genbu Media](https://genbu.me/contact-us/).
+1. Support available at [Genbu Media](https://genbumedia.com/contact-us/).
 
 
 == Installation ==
@@ -45,6 +45,11 @@ The settings is in the bottom of "Settings > Reading" in your admin panel. You w
 1. Private Site Setting.
 
 == Changelog ==
+
+= 1.2.0 - 09 September 2016 =
+* Better whitelist for buddypress https://github.com/justintadlock/members/issues/83#issuecomment-245237479
+* Whitelist WooCommerce "My Account" Page (fix lost password).
+* Add Indonesian Translation.
 
 = 1.1.0 - 05 April 2016 =
 * Activation notice: "Settings Page".

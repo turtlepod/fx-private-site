@@ -3,7 +3,7 @@
  * Plugin Name: f(x) Private Site
  * Plugin URI: http://genbumedia.com/plugins/fx-private-site/
  * Description: Set your site to member only. All visitor will need to login to view site.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: David Chandra Purnama
  * Author URI: http://shellcreeper.com/
  * License: GPLv2 or later
@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) { die; }
 ------------------------------------------ */
 
 /* Set the version constant. */
-define( 'FX_PRIVATE_SITE_VERSION', '1.0.1' );
+define( 'FX_PRIVATE_SITE_VERSION', '1.2.0' );
 
 /* Set the constant path to the plugin path. */
 define( 'FX_PRIVATE_SITE_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
