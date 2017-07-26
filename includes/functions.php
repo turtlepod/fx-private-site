@@ -71,6 +71,12 @@ function fx_private_site_please_log_in() {
 		/* Hook */
 		do_action( 'fx_private_site_before_auth_redirect' );
 
+		/* Always allow access to /robots.txt to allow search engine indexing management. */
+		global $wp;
+		if ( $wp->request === 'robots.txt' ) {
+			return;
+		}
+
 		/* If using BuddyPress and on the register page, don't do anything. */
 		if ( function_exists( 'bp_is_activation_page' ) && bp_is_activation_page() ){
 			return;
