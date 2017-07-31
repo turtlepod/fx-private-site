@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: private site, members only, protect rss
 Requires at least: 4.0
 Tested up to: 4.7
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,9 @@ The settings is in the bottom of "Settings > Reading" in your admin panel. You w
 1. Private Site Setting.
 
 == Changelog ==
+
+= 1.2.1 - 31 July 2017 =
+* Whitelist WordPress robots.txt credit to [Alex Kirk](https://alexander.kirk.at/)
 
 = 1.2.0 - 09 September 2016 =
 * Better whitelist for buddypress https://github.com/justintadlock/members/issues/83#issuecomment-245237479
